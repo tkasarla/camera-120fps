@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/boost/include/boost-1_59" />
+				</Compiler>
+				<Linker>
+					<Add library="..\..\..\..\boost\lib\libboost_atomic-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_atomic-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_chrono-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_chrono-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_container-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_container-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_context-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_context-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_coroutine-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_coroutine-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_date_time-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_date_time-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_exception-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_exception-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_filesystem-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_filesystem-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_graph-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_graph-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_iostreams-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_iostreams-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_locale-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_locale-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_log_setup-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_log_setup-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_log-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_log-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99f-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99f-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99l-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99l-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_c99-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1f-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1f-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1l-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1l-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_math_tr1-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_prg_exec_monitor-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_prg_exec_monitor-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_program_options-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_program_options-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_random-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_random-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_regex-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_regex-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_serialization-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_serialization-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_signals-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_signals-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_system-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_system-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_test_exec_monitor-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_test_exec_monitor-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_thread-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_thread-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_timer-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_timer-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_unit_test_framework-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_unit_test_framework-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_wave-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_wave-mgw48-mt-d-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_wserialization-mgw48-mt-1_59.a" />
+					<Add library="..\..\..\..\boost\lib\libboost_wserialization-mgw48-mt-d-1_59.a" />
+					<Add directory="C:/boost/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
