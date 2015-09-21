@@ -19,6 +19,8 @@ void captureFunc(Mat *frame, VideoCapture *capture){
 		//capture from webcame to Mat frame
 		(*capture) >> (*frame);
 
+
+
 	}
 }
 
@@ -29,13 +31,15 @@ int main (int argc, char *argv[])
 	time_duration td, td1;
 	ptime nextFrameTimestamp, currentFrameTimestamp, initialLoopTimestamp, finalLoopTimestamp;
 	int delayFound = 0;
-	int totalDelay= 0;
+	//int totalDelay= 0;
 
 	// initialize capture on default source
 	VideoCapture capture(1);
 
 	// set framerate to record and capture at
 	int framerate = 120;
+
+
 
 	// Get the properties from the camera
 	double width = capture.get(CV_CAP_PROP_FRAME_WIDTH);
@@ -58,7 +62,8 @@ int main (int argc, char *argv[])
 
 	// start thread to begin capture and populate Mat frame
 	boost::thread captureThread(captureFunc, &frame, &capture);
-
+   // namedWindow("Video",WINDOW_NORMAL);
+    namedWindow("image",WINDOW_AUTOSIZE);
 	// loop infinitely
 	for(;;)
 	{
@@ -73,18 +78,28 @@ int main (int argc, char *argv[])
 		//	 determine time at start of write
 		initialLoopTimestamp = microsec_clock::local_time();
 
+
+		if((frame.rows && frame.cols)){
+
+
+                 imshow("image",frame);
+                 waitKey(1) && 0xFF;
+
+		}
+
 		// Save frame to video
 		video << frame;
 
 		//write previous and current frame timestamp to console
 		cout << nextFrameTimestamp << " " << currentFrameTimestamp << " ";
 
+
 		// add 1second/framerate time for next loop pause
 		nextFrameTimestamp = nextFrameTimestamp + microsec(1000000/framerate);
 
 		// reset time_duration so while loop engages
 		td = (currentFrameTimestamp - nextFrameTimestamp);
-
+        cout<< (td) <<" "<<endl;
 		//determine and print out delay in ms, should be less than 1000/FPS
 		//occasionally, if delay is larger than said value, correction will occur
 		//if delay is consistently larger than said value, then CPU is not powerful
